@@ -1,7 +1,6 @@
 # Wordpress Login Checker
 
-Format login :
-https://website.com/wp-login.php#username@password
+Format : https://website.com/wp-login.php#username@password
 
 ```
 $ git clone https://github.com/anggamaulani/wpchecker/
