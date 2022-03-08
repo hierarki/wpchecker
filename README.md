@@ -4,8 +4,8 @@ Format : https://website.com/wp-login.php#username@password
 
 ```
 $ git clone https://github.com/anggamaulani/wpchecker/
-$ pip install -r requirements.txt
 $ cd wpchecker
+$ pip install -r requirements.txt
 $ python3 main.py
 ```
 
